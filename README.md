@@ -53,6 +53,7 @@ There are two ways to run the application:
 ```
 docker run --name [YOUR_CONTAINER_NAME] -e POSTGRES_PASSWORD=[YOUR_PASSWORD] -p 5431:5432 -d postgres
 ```
+- Access the PostgreSQL server and execute the provided `migration.sql` file
 
 ## Running the Application
 
