@@ -8,10 +8,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { configService } from './config/config.service';
-import { ProductModule } from './product/product.module';
 import { RoleCheckMiddleware } from './common/middlewares/role-check.middleware';
 import { AuthModule } from './modules/auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { ProductModule } from './modules/product/product.module';
 
 @Module({
   imports: [

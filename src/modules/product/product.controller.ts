@@ -10,24 +10,24 @@ import {
   Query,
 } from '@nestjs/common';
 import { ProductService } from './product.service';
-import { Product } from '../entity/product.entity';
+import { Product } from '../../entity/product.entity';
 import {
   ApiBearerAuth,
   ApiBody,
   ApiOperation,
   ApiQuery,
 } from '@nestjs/swagger';
-import { RoleGuard } from '../common/guards/role.guard';
-import { Role } from '../common/decorators/role.decorators';
-import { CreateProductDto } from '../dto/product/create-product.dto';
-import { UpdateProductDto } from '../dto/product/update-product.dto';
-import { FindProductDto } from '../dto/product/find-product.dto';
+import { RoleGuard } from '../../common/guards/role.guard';
+import { Role } from '../../common/decorators/role.decorators';
+import { CreateProductDto } from '../../dto/product/create-product.dto';
+import { UpdateProductDto } from '../../dto/product/update-product.dto';
+import { FindProductDto } from '../../dto/product/find-product.dto';
 import {
   CreateProductResponseDto,
   DeleteProductResponseDto,
   FindProductsResponseDto,
   UpdateProductResponseDto,
-} from '../dto/product/response.dto';
+} from '../../dto/product/response.dto';
 
 @Controller('products')
 export class ProductController {
