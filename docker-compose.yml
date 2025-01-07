@@ -10,10 +10,10 @@ services:
     ports:
       - '3000:3000'
     environment:
-      POSTGRES_HOST: localhost
+      POSTGRES_HOST:    
       POSTGRES_PORT: 5432
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: zurich123
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
       POSTGRES_DATABASE: MOTOR_INSURANCE_WEBSITE
     depends_on:
       - db
@@ -23,8 +23,8 @@ services:
     container_name: postgres-db
     restart: always
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: zurich123
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
       POSTGRES_DB: MOTOR_INSURANCE_WEBSITE
     ports:
       - '5432:5432'

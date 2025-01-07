@@ -1,1 +1,0 @@
-docker run --name MOTOR_INSURANCE_WEBSITE -e POSTGRES_PASSWORD=zurich123 -p 5431:5432 -d postgres
